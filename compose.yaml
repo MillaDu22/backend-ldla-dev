@@ -1,0 +1,10 @@
+services:
+  app:
+    image: image-app
+    build:
+      context: .
+    container_name: app
+    ports: 
+      - 3000:3000
+    volumes:
+      - .:/backend-ldla-dev
