@@ -1,12 +1,12 @@
 services:
   server:
-    image: image-backend-ldla-dev
+    image: image-api-backend-ldla-dev
     build:
       context: .
     environment:
       NODE_ENV: production
       <ENV_VARIABLE_FOR_MONGO_URI>: "mongodb+srv://admin-dev-ldla:DevAdminDataBase2024@devsiteldlacluster.xtpuzzh.mongodb.net/?"
-    container_name: backend-ldla-dev
+    container_name: api-backend-ldla-dev
     ports: 
       - 8100:8100
     command: >
