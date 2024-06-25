@@ -3,5 +3,6 @@ WORKDIR /backend-ldla-dev/
 COPY . .
 COPY package.json ./
 COPY package-lock.json ./ 
+RUN npm install nodemon
 RUN npm install
 CMD ["nodemon", "server.js"]
